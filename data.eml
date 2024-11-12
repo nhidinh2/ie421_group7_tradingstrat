@@ -1,0 +1,39 @@
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=illinois-edu.20230601.gappssmtp.com; s=20230601; t=1731398591; x=1732003391; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=Zoz/q8KrBeksHKx2ttb+hAuYt/jBk76+N66RbREYotc=;
+        b=tKI4Oq1Emgx+9MrVyo79UNqTN1c8HQfA4BsU1cE/3BaHW8KtwFIBjz5KX/SQJ7M+Df
+         GlMTHDK1rDUOi5iiYItYWuO4/gpv1Znxnae7jHt1XRRnXzz4yUYCRE3fS5GxNWK5qJx4
+         Lw4PQB5r5nH9hcHVNsdB7kEjDAlENK9oOqcCthm1DZiyQ7zBkE3CABKr+2SyZl3ZdPCc
+         nP0j7iSJSfhzIXUtprmiXQRwhvd2gNK18BMCkw47XuiX5mGB/ihjSF6x7TPWa3RbMV5L
+         rmfgmuAmy+uURYzSI157Haw+S489OZcK0zd4PCZTMvdGkFNEO/3o076QDimtekKSRWsA
+         bz4A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1731398591; x=1732003391;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=Zoz/q8KrBeksHKx2ttb+hAuYt/jBk76+N66RbREYotc=;
+        b=CStzCYeFfqSdYaPbmibWYbRAkiZLGaLeCtGcolChZjBtK3zIz2Wuu1f7bMAjmm+7tc
+         bEQub5qNcoC5Wf/HhBt2HXVsuKQpICZQidJFa0B7jpg5BukZ+968/0LNplnYCy3b+yn1
+         YfNYeekxGYkDe0kEkRj2YFRns6JOI4I3Ov/5T4lxd504ZDDpCTywYZC78IfEZAad7T00
+         jTojLwxNx0m65G+mTahsalcET4I46sf3zEpk7H2voy2p16GLa8y0DBHcW1lSSryGYonu
+         abVVWdtNCq/XUgdmf8E/5QJDgP94sigI0ZYtzQ+XizINbvMZuzYN/VhOBbbUeON43I15
+         l7Qw==
+X-Gm-Message-State: AOJu0YzP3cgxhsLS4TsNOJuiqv0X/J58FTCu+vV1pjkB47b3C+eY/l+o
+	hUcI2Zep+6AUeoiw/KNmmo1mBVMNSgAwlIYQhAFqgP7nEzXtmWArxQ3hTF4r/MG9hLNaW+ig/2p
+	d+vIwk5FcgZLss6+Ec3VhBDGRwhfP09f9F+hckdF2CpettSQ=
+X-Google-Smtp-Source: AGHT+IHYcRYw0tHQd3LF1ftPS084B6a8JRYwjvEoXa22T+q/8nrnEhQDT1jHGNwlcYNoHDv3d6R4kpOosJGs6/JbMqA=
+X-Received: by 2002:a05:6512:485a:b0:539:fe02:c1fe with SMTP id
+ 2adb3069b0e04-53d85ef6c4amr3917166e87.16.1731398587696; Tue, 12 Nov 2024
+ 00:03:07 -0800 (PST)
+From: Ryan Chiou <rnchiou2@illinois.edu>
+Date: Tue, 12 Nov 2024 02:02:51 -0600
+Message-ID: <CACScW9=Dj4-dz5+WQzHROHbvm4ZFvnX9jJj0XJsE7RCRa-=bhA@mail.gmail.com>
+Subject: data
+To: dani2105007@gmail.com
+Content-Type: text/plain
+MIME-Version: 1.0
+
+----- Message truncated -----
+--000000000000c939c20626b2a5d2--

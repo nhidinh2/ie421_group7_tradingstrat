@@ -635,7 +635,7 @@ if __name__ == "__main__":
     
     
     
-    num_price_levels_to_print = 3
+    num_price_levels_to_print = 11
     parser = BasicPcapParser(iex_pcap_file_to_parse, stocks_to_output, trades_output_file_name, book_updates_output_file_name, timestamp_output_filename, num_price_levels_to_print)
     
     should_benchmark = False #change me to True in order to benchmark code

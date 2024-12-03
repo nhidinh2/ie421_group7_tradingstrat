@@ -630,7 +630,7 @@ if __name__ == "__main__":
         timestamp_output_filename = None
     
     
-    max_packets_to_parse = 1e9
+    max_packets_to_parse = 1e10
     
     
     

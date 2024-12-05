@@ -140,8 +140,10 @@ class BasicPcapParser():
         self.file = open(self.filename, "rb")
         
 #         start_parse_time = time.localtime()
-#         print("Starting parsing @ %s" % (time.strftime("%H:%M:%S", start_parse_time)))
+#         print("Starting parsing @ %s" % (time.strftime("%H:%M:%S/", start_parse_time)))
         start_parse_time = datetime.datetime.now()
+        start_parse_time = start_parse_time.replace(hour=0, minute=0, second=0, microsecond=0)
+
         print("Starting parsing @ %s" % (start_parse_time))
         pcap_header_len = 4 + 2 + 2 + 4 + 4 + 4 + 4
         byte = self.file.read(pcap_header_len)

@@ -140,10 +140,8 @@ class BasicPcapParser():
         self.file = open(self.filename, "rb")
         
 #         start_parse_time = time.localtime()
-#         print("Starting parsing @ %s" % (time.strftime("%H:%M:%S/", start_parse_time)))
+#         print("Starting parsing @ %s" % (time.strftime("%H:%M:%S", start_parse_time)))
         start_parse_time = datetime.datetime.now()
-        start_parse_time = start_parse_time.replace(hour=0, minute=0, second=0, microsecond=0)
-
         print("Starting parsing @ %s" % (start_parse_time))
         pcap_header_len = 4 + 2 + 2 + 4 + 4 + 4 + 4
         byte = self.file.read(pcap_header_len)
@@ -622,8 +620,8 @@ if __name__ == "__main__":
         if sys.argv[6] != "--output-deep-books-too":
             raise Exception("Invalid argument: %s" % (sys.argv[6]))
         else:
-            trades_output_file_name = "data/book_snapshots/%s_trades.csv" % (trade_date)
-            book_updates_output_file_name = "data/book_snapshots/%s_book_updates.csv" % (trade_date)
+            trades_output_file_name = None 
+            book_updates_output_file_name = "../data/%s_book_updates.csv" % (trade_date)
             # timestamp_output_filename = "data/book_snapshots/%s_message_timestamps.csv"% (trade_date)
             timestamp_output_filename = None #disable this for now as the files are HUGE
     else:
@@ -632,7 +630,7 @@ if __name__ == "__main__":
         timestamp_output_filename = None
     
     
-    max_packets_to_parse = 1e10
+    max_packets_to_parse = 1e9
     
     
     

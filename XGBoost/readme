@@ -1,0 +1,24 @@
+1. Install xgboost 
+
+cd into this project
+
+git clone --recursive https://github.com/dmlc/xgboost.git
+cd xgboost
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+
+1. Edit the Makefile to include the correct paths for:
+
+LIBPATH: Path to Strategy Studio's library files.
+INCLUDEPATH: Path to Strategy Studio's header files.
+
+i.e: 
+LIBPATH = /usr/local/strategystudio/libs
+INCLUDEPATH = /usr/local/strategystudio/includes
+
+2. 
+- Move these files (`.cpp, .h, Makefile`) into Strategy Studios
+- Wscript file `compile_backtest.sh` that compiles the strategy, moves the strategy output file to the desired location in Strategy Studio, and start the backtest command line in Strategy Studio. 
+- When Strategy Studio finishes backtesting, our script would then export these files into `.csv` files. 
